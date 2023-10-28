@@ -1,0 +1,84 @@
+.field {
+    background-image: url('./../../assets/img/wallpaper.jpg');
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.card-stack {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100px;
+    }
+}
+
+.top-card {
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+.played-card {
+    bottom: 20px;
+    transform: scale(1) translateX(200px) rotate(-20deg);
+}
+
+.pick-card {
+    transition: all 125ms ease-in-out;
+    bottom: 20px;
+    animation: pick-card-animation 1s ease-in-out;
+    transform: scale(1) translateX(200px) rotate(-20deg);
+}
+
+.player-position {
+    position: absolute;
+    right: 0;
+    top: 125px;
+}
+
+@keyframes pick-card-animation {
+    0% {
+        transform: scale(1) translateY(160px);
+    }
+
+    20% {
+        transform: scale(1.2) translateY(160px);
+    }
+
+    40% {
+        transform: scale(1.2) translateY(160px);
+    }
+
+    60% {
+        transform: scale(1.2) translateY(160px);
+    }
+
+    100% {
+        transform: scale(1) translateX(200px) rotate(-20deg);
+    }
+}
+
+.btn-add {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    background-color: #0e9000;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: #0a5701;
+    }
+}
+
+.pin-bottom {
+    position: absolute;
+    bottom: 32px;
+    left: 100px;
+    right: 100px;
+    
+}

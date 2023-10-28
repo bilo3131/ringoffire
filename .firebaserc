@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pisti-bcfa2": {
+      "hosting": {
+        "ringoffire": [
+          "pisti-bcfa2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pisti-bcfa2"
+  }
+}

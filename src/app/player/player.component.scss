@@ -1,0 +1,28 @@
+.profile {
+    gap: 8px;
+    background-color: #262626e6;
+    border: 1px 0 1px 1px solid #6c757d;
+    width: 280px;
+    border-radius: 50px 0 0 50px;
+
+    span {
+        font-size: 24px;
+        color: #6c757d;
+    }
+
+    img{
+        height: 65px;
+        width: 65px;
+        border-radius: 100%;
+        border: solid #6c757d;
+        padding: 2px;
+    }
+}
+
+.player-active {
+    background-color: #3c096c;
+    
+    span {
+        color: #e6e6e6;
+    }
+}
