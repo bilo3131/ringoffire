@@ -1,4 +1,4 @@
 <mat-card>
-    <mat-card-title>Titel</mat-card-title>
-    <mat-card-content>Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius velit est cupiditate? Labore officia nesciunt nihil dolorem eos, nam veniam fugiat sequi atque incidunt? Maxime sed et repellendus earum.</mat-card-content>
+    <mat-card-title>{{ card ? title : 'Please pick a card to start the game!' }}</mat-card-title>
+    <mat-card-content>{{ card ? description : '' }}</mat-card-content>
 </mat-card>
